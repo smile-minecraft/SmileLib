@@ -2,16 +2,18 @@ package com.example.smileLib;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class SmileLib extends JavaPlugin {
+public class SmileLib extends JavaPlugin {
+	private static SmileLib instance;
 
 	@Override
 	public void onEnable() {
-		// Plugin startup logic
+		instance = this;
 
+		getLogger().info("SmileLib 啟動成功！");
 	}
 
-	@Override
-	public void onDisable() {
-		// Plugin shutdown logic
+	public static SmileLib getInstance() {
+		return instance;
 	}
 }
+
