@@ -25,7 +25,7 @@ import java.nio.charset.StandardCharsets;
 public class JSONManager {
 
 	// GSON 實例，啟用 pretty printing（整齊格式化）
-	private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+	static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
 	/**
 	 * 從指定的文件路徑讀取 JSON 文件，並返回解析後的 JsonElement 對象。
@@ -134,5 +134,9 @@ public class JSONManager {
 		try (Reader reader = new InputStreamReader(new FileInputStream(filePath), StandardCharsets.UTF_8)) {
 			return gson.fromJson(reader, clazz);
 		}
+	}
+
+	public static Gson getGson() {
+		return gson;
 	}
 }
