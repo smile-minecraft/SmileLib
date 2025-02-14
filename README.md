@@ -1,8 +1,3 @@
-下面是一份 README.md 的範例，介紹了各個工具包（config、database、json、logger）的功能與使用方法，供你的第一版 Library 使用。
-
----
-
-
 # SmileLib - A Utility Library for Minecraft Paper Plugins
 
 SmileLib 是一個專為 Minecraft Paper Plugin 開發者設計的工具庫，提供一系列常用功能，讓你可以更方便地進行插件開發。此 Library 包含以下模組：
