@@ -1,0 +1,6 @@
+name: SmileLib
+version: '1.0-SNAPSHOT'
+main: com.example.smileLib.SmileLib
+api-version: '1.21'
+authors: [ Smile ]
+description: A lib plugin used in Smile's all plugin
