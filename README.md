@@ -8,11 +8,19 @@ SmileLib 是一個專為 Minecraft Paper Plugin 開發者設計的工具庫，�
 - **Logger**：自定義 Logger 工具包，利用 Paper API 的 ChatColor 實現彩色控制台輸出，支持將 log 緩存後寫入文件並透過 Discord Webhook 發送錯誤訊息。
 
 ---
+[![](https://jitpack.io/v/smile-minecraft/SmileLib.svg)](https://jitpack.io/#smile-minecraft/SmileLib)
+
 
 ## 安裝
+```kotlin
+repositories {
+  maven { url 'https://jitpack.io' }
+}
 
-將 SmileLib Library 打包成 JAR 文件，並將此 JAR 添加到你的 Minecraft Paper Plugin 的插件資料夾中。同時，確保你的專案中已引入所需的依賴庫（例如 GSON、SnakeYAML 等）。
-
+dependencies {
+  implementation 'com.github.smile-minecraft:SmileLib:v0.0'
+}
+```
 ---
 
 ## 工具包使用指南
