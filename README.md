@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.github.smile-minecraft:SmileLib:v0.0'
+  implementation 'com.github.smile-minecraft:SmileLib:v0.0.1'
 }
 ```
 ---
